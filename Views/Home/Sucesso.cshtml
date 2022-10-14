@@ -1,0 +1,96 @@
+@model List<Agendamento>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+    <br>
+    
+    <center><h1>Agendamento feito com sucesso</h1></center>
+
+
+    <br><br>
+    <span class="ponto1"></span>
+    <span class="ponto2"></span>
+    <span class="ponto3"></span>
+    <span class="centro"></span> 
+    <span class="ponto4"></span> 
+
+    <span class="ponto12"></span>
+    <span class="ponto22"></span>
+    <span class="ponto32"></span>
+    <span class="centro2"></span> 
+    <span class="ponto42"></span> 
+
+    <span class="ponto13"></span>
+    <span class="ponto23"></span>
+    <span class="ponto33"></span>
+    <span class="centro3"></span> 
+    <span class="ponto43"></span> 
+
+    <center><table>
+
+        <thead>
+
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Data</th>
+                <th>Animal</th>
+                <th>Necessidade</th>
+            
+            </tr>
+
+
+        </thead>
+
+
+        <tbody>
+            
+                 @foreach (Agendamento agenda  in Model)
+                 {
+                        <tr>
+                        <td>@agenda.Nome</td>
+                        <td>@agenda.Telefone</td>
+                        <td>@agenda.Data</td>
+                        <td>@agenda.Animal</td>
+                        <td>@agenda.Necessidade</td>
+                        </tr>
+
+                 }
+
+            
+
+        </tbody>
+
+    </table></center>
+
+
+<span class="ponto15"></span>
+    <span class="ponto25"></span>
+    <span class="ponto35"></span>
+    <span class="centro5"></span> 
+    <span class="ponto45"></span>
+
+
+
+    <span class="ponto16"></span>
+    <span class="ponto26"></span>
+    <span class="ponto36"></span>
+    <span class="centro6"></span> 
+    <span class="ponto46"></span>  
+
+
+    <span class="ponto17"></span>
+    <span class="ponto27"></span>
+    <span class="ponto37"></span>
+    <span class="centro7"></span> 
+    <span class="ponto47"></span>
+  
+    
+
+
+
+   
+

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>PetVet</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+      <link rel = "icon" href="https://cdn-icons-png.flaticon.com/512/194/194279.png"
+        type = "image/x-icon">
+</head>
+<body>
+    <header>
+        
+                    <ul class="heitor">
+                        <li class="heitor">
+                            <a  asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-paw"></i> Início</a>
+                        </li>
+                        <li class="heitor">
+                            <a  asp-area="" asp-controller="Home" asp-action="Servico"><i class="fas fa-hands-helping"></i> Serviços</a>
+                        </li>
+                        <li class="heitor">
+                            <a  asp-area="" asp-controller="Home" asp-action="Agendamento"><i class="fas fa-calendar-alt"></i> Agendamento</a>
+                        </li>
+                         <li class="heitor">
+                            <a  asp-area="" asp-controller="Home" asp-action="Sucesso"><i class="fas fa-check-square"></i> Atendimento Marcado</a>
+                        </li>
+                    </ul>
+            
+    </header>
+   
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <ul class="heitor">
+           <li class="heitor">&copy; 2022 - PetVet</li>
+        </ul>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
